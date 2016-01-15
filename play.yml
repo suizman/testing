@@ -1,0 +1,10 @@
+---
+- name: Do some Ansible testing
+  hosts: all
+  connection: local
+  tasks:
+
+   - name: Dummy command
+     command: >
+       ls -l /
+     changed_when: false
